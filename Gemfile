@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.4'
 
+# communicate with s3 bucket
+gem 'fog'
+# easy way to hide keys
+gem 'figaro'
 gem 'faker'
 gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
